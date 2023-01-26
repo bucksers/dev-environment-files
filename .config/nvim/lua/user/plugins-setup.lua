@@ -37,14 +37,7 @@ return packer.startup(function(use)
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
-  use("szw/vim-maximizer") -- maximizes and restores current window
-
-  -- essential plugins
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
-  use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-
-  -- commenting with gc
-  use("numToStr/Comment.nvim")
 
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
@@ -77,7 +70,6 @@ return packer.startup(function(use)
   use("neovim/nvim-lspconfig") -- easily configure language servers
   use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
   use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
   -- formatting & linting
@@ -95,7 +87,6 @@ return packer.startup(function(use)
 
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
   -- git integration
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
